@@ -1,15 +1,26 @@
-# Python_Revision
+## Python Setup Cheat Sheet
 
-# How to create the Environment for the for the Project
+### 1. Initialize Environment
 
-# create
+```bash
 python3 -m venv venv
 
-# activate
-source venv/bin/activate
+```
 
-# install
-pip install package_name
+### 2. Activate
 
-# deactivate
+* **Linux/Fedora:** `source venv/bin/activate`
+* **Windows:** `.\venv\Scripts\activate`
+
+### 3. Manage Packages
+
+* **Install:** `pip install <package>`
+* **Save List:** `pip freeze > requirements.txt`
+* **Install List:** `pip install -r requirements.txt`
+
+### 4. Exit
+
+```bash
 deactivate
+
+```
